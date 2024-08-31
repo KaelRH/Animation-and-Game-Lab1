@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: VIper.ma
-//Last modified: Fri, Aug 30, 2024 09:24:40 PM
+//Name: VIper.0005.ma
+//Last modified: Fri, Aug 30, 2024 09:24:39 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.0";
@@ -10,7 +10,8 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202302170737-4500172811";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "F4EB6CDE-4738-9CCB-45E4-C6B4CF7DD22F";
+fileInfo "UUID" "56FDFD72-48A5-A310-0FA3-3F8E2FB0B071";
+fileInfo "exportedFrom" "C:/Users/kaelr/Git/DAGV 335L/Animation and Game Lab1/scenes/VIper.ma";
 createNode transform -s -n "persp";
 	rename -uid "CB5DA59D-428B-A882-5D3F-A7A2ECA53735";
 	setAttr ".v" no;
@@ -60729,14 +60730,14 @@ createNode groupId -n "groupId5";
 createNode groupId -n "groupId11";
 	rename -uid "266FD317-4D16-90C3-CD3E-E59FC7120DB8";
 	setAttr ".ihi" 0;
-createNode groupId -n "groupId12";
-	rename -uid "E94D3AE6-4FA6-2E5A-7A56-F9A9509C8E2F";
-	setAttr ".ihi" 0;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "29905549-4B3D-5F3D-4BD2-96BC1CEEE1AB";
+	rename -uid "4F90779D-4AB9-5D30-C166-49B14CF489FE";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -44.047617297323995 -569.04759643569912 ;
 	setAttr ".tgi[0].vh" -type "double2" 415.47617396665066 44.047617297323995 ;
+createNode groupId -n "groupId12";
+	rename -uid "E94D3AE6-4FA6-2E5A-7A56-F9A9509C8E2F";
+	setAttr ".ihi" 0;
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -60877,10 +60878,6 @@ connectAttr "pCylinderShape4.iog" "pasted__pasted__blinn4SG.dsm" -na;
 connectAttr "pCylinderShape5.iog" "pasted__pasted__blinn4SG.dsm" -na;
 connectAttr "pCylinderShape6.iog" "pasted__pasted__blinn4SG.dsm" -na;
 connectAttr "pasted__pasted__lambert9SG.msg" "pasted__pasted__materialInfo9.sg";
-connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
-		 -na;
-connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";
-connectAttr ":defaultArnoldDriver.msg" ":defaultArnoldRenderOptions.drvr";
 connectAttr "pasted__blinn1SG.pa" ":renderPartition.st" -na;
 connectAttr "pasted__lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "pasted__lambert4SG.pa" ":renderPartition.st" -na;
@@ -60903,4 +60900,4 @@ connectAttr "Guns.msg" ":defaultShaderList1.s" -na;
 connectAttr "InnerBackEngineGlow.msg" ":defaultShaderList1.s" -na;
 connectAttr "TurbinesBlin.msg" ":defaultShaderList1.s" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of VIper.ma
+// End of VIper.0005.ma
